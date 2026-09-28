@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ShopEase - Modern, smart, and easy online shopping for fashion, shoes, bags, watches, and electronics.">
+  <title>ShopEase | Shop Smart, Shop Easy</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container announcement-content">
+      <span><i class="fa-solid fa-truck-fast"></i> Free worldwide standard shipping on orders over $50!</span>
+      <span class="announcement-tag"><i class="fa-solid fa-shield-halved"></i> 100% Satisfaction Guaranteed</span>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-bag-shopping"></i></span>
+        <span class="logo-text">Shop<span class="brand-accent">Ease</span></span>
+      </a>
+
+      <!-- Search Bar -->
+      <div class="search-wrapper">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input 
+          type="text" 
+          id="search-input" 
+          placeholder="Search T-shirts, shoes, watches, headphones..." 
+          autocomplete="off"
+          aria-label="Search products"
+        >
+        <button id="clear-search-btn" class="clear-search-btn" title="Clear search" aria-label="Clear search">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="nav" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#products" class="nav-link">Products</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Buttons -->
+      <div class="header-actions">
+        <!-- Cart Button -->
+        <button class="cart-btn" id="cart-btn" aria-label="View shopping cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-badge" id="cart-count">0</span>
+          <span class="cart-btn-label">Cart</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i class="fa-solid fa-bolt"></i> Spring & Summer Sale • 2026 Collection
+          </div>
+          <h1 class="hero-title">
+            Shop Smart, <br>
+            <span class="gradient-text">Shop Easy</span>
+          </h1>
+          <p class="hero-description">
+            Discover handpicked essentials designed for modern living. From everyday premium tees and stylish footwear to high-definition audio and luxury timepieces.
+          </p>
+          <div class="hero-actions">
+            <a href="#products" class="btn btn-primary">
+              <i class="fa-solid fa-bag-shopping"></i> Explore Products
+            </a>
+            <a href="#about" class="btn btn-secondary">
+              Learn More <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">15K+</span>
+              <span class="stat-label">Happy Shoppers</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">4.9 ★</span>
+              <span class="stat-label">Product Rating</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">24/7</span>
+              <span class="stat-label">Friendly Support</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card">
+            <img 
+              src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80" 
+              alt="Premium Featured Watch" 
+              class="hero-img"
+            >
+            <div class="hero-floating-card top-float">
+              <div class="floating-icon"><i class="fa-solid fa-tag"></i></div>
+              <div>
+                <p class="float-title">Special Offer</p>
+                <p class="float-subtitle">Up to 35% OFF</p>
+              </div>
+            </div>
+            <div class="hero-floating-card bottom-float">
+              <div class="floating-icon green"><i class="fa-solid fa-truck-ramp-box"></i></div>
+              <div>
+                <p class="float-title">Free Express Delivery</p>
+                <p class="float-subtitle">Across all categories</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Perks / Value Proposition Bar -->
+    <section class="perks-section">
+      <div class="container perks-grid">
+        <div class="perk-card">
+          <div class="perk-icon"><i class="fa-solid fa-truck"></i></div>
+          <div class="perk-text">
+            <h4>Free Shipping</h4>
+            <p>Orders over $50 qualify</p>
+          </div>
+        </div>
+        <div class="perk-card">
+          <div class="perk-icon"><i class="fa-solid fa-rotate-left"></i></div>
+          <div class="perk-text">
+            <h4>Easy 30-Day Returns</h4>
+            <p>Stress-free money back</p>
+          </div>
+        </div>
+        <div class="perk-card">
+          <div class="perk-icon"><i class="fa-solid fa-lock"></i></div>
+          <div class="perk-text">
+            <h4>100% Secure Checkout</h4>
+            <p>Protected by encryption</p>
+          </div>
+        </div>
+        <div class="perk-card">
+          <div class="perk-icon"><i class="fa-solid fa-headset"></i></div>
+          <div class="perk-text">
+            <h4>Dedicated Support</h4>
+            <p>Prompt 24/7 assistance</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="products-section" id="products">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Curated Collection</div>
+          <h2 class="section-title">Featured Products</h2>
+          <p class="section-subtitle">
+            Explore our most popular picks across fashion, accessories, and modern tech.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filters-wrapper">
+          <div class="filters-list" id="category-filters" role="tablist">
+            <button class="filter-btn active" data-category="all" role="tab">All Items</button>
+            <button class="filter-btn" data-category="tshirts" role="tab">T-Shirts</button>
+            <button class="filter-btn" data-category="shoes" role="tab">Shoes</button>
+            <button class="filter-btn" data-category="handbags" role="tab">Handbags</button>
+            <button class="filter-btn" data-category="watches" role="tab">Watches</button>
+            <button class="filter-btn" data-category="headphones" role="tab">Headphones</button>
+          </div>
+          <div class="products-counter" id="products-counter">
+            Showing all products
+          </div>
+        </div>
+
+        <!-- Products Grid Container -->
+        <div class="products-grid" id="products-grid">
+          <!-- Dynamically populated by JavaScript -->
+        </div>
+
+        <!-- Empty Results Message -->
+        <div class="no-products-msg hidden" id="no-products-msg">
+          <i class="fa-regular fa-face-frown empty-icon"></i>
+          <h3>No matching products found</h3>
+          <p>Try searching for something else or reset the category filter.</p>
+          <button class="btn btn-primary" id="reset-filter-btn">View All Products</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="container about-container">
+        <div class="about-image-wrapper">
+          <img 
+            src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80" 
+            alt="About ShopEase Store" 
+            class="about-img"
+          >
+          <div class="about-badge-card">
+            <span class="badge-number">100%</span>
+            <span class="badge-text">Authentic Products & Premium Craftsmanship</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <div class="section-badge">Our Story</div>
+          <h2 class="section-title">Making Shopping Truly Effortless</h2>
+          <p class="about-paragraph">
+            At <strong>ShopEase</strong>, we believe finding high quality everyday essentials should be straightforward, enjoyable, and accessible. Founded with a vision to streamline your shopping experience, we bring together carefully vetted fashion apparel, durable leather goods, and high-performance audio essentials.
+          </p>
+
+          <div class="about-features-list">
+            <div class="about-feature-item">
+              <div class="check-icon"><i class="fa-solid fa-circle-check"></i></div>
+              <div>
+                <h4>Handpicked Quality Standards</h4>
+                <p>Every single item is thoroughly reviewed for design durability, comfort, and premium materials.</p>
+              </div>
+            </div>
+            <div class="about-feature-item">
+              <div class="check-icon"><i class="fa-solid fa-circle-check"></i></div>
+              <div>
+                <h4>Transparent Pricing</h4>
+                <p>No hidden surprise fees. Just honest prices, regular discounts, and clear specifications.</p>
+              </div>
+            </div>
+            <div class="about-feature-item">
+              <div class="check-icon"><i class="fa-solid fa-circle-check"></i></div>
+              <div>
+                <h4>Eco-Conscious Packaging</h4>
+                <p>All our packages are shipped in recyclable, minimal-waste protective cartons.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Get in Touch</div>
+          <h2 class="section-title">We’d Love to Hear From You</h2>
+          <p class="section-subtitle">
+            Have a question about a product, sizing, or your order? Drop us a message anytime!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <div class="contact-info-cards">
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <h4>Email Us</h4>
+                <p>support@shopease.example.com</p>
+                <span>Mon-Fri from 9am to 6pm</span>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <h4>Call Us</h4>
+                <p>+1 (800) 555-EASE (3273)</p>
+                <span>Toll-free customer care</span>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <h4>Headquarters</h4>
+                <p>742 Evergreen Terrace, Suite 100</p>
+                <span>San Francisco, CA 94107</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper">
+            <form id="contact-form" class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name">Your Full Name</label>
+                  <input type="text" id="contact-name" placeholder="e.g. Alex Morgan" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Email Address</label>
+                  <input type="email" id="contact-email" placeholder="alex@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" placeholder="Product question, sizing help..." required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Your Message</label>
+                <textarea id="contact-message" rows="4" placeholder="How can our support team assist you today?" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary submit-btn">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modern Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-col brand-col">
+        <a href="#home" class="logo footer-logo">
+          <span class="logo-icon"><i class="fa-solid fa-bag-shopping"></i></span>
+          <span class="logo-text">Shop<span class="brand-accent">Ease</span></span>
+        </a>
+        <p class="footer-bio">
+          Your premier online destination for premium lifestyle apparel, footwear, timepieces, and acoustic electronics.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="social-link" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Featured Products</a></li>
+          <li><a href="#about">About ShopEase</a></li>
+          <li><a href="#contact">Contact Support</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Top Categories</h4>
+        <ul class="footer-links">
+          <li><a href="#products" class="category-link" data-category="tshirts">T-Shirts & Tops</a></li>
+          <li><a href="#products" class="category-link" data-category="shoes">Sneakers & Shoes</a></li>
+          <li><a href="#products" class="category-link" data-category="handbags">Handbags & Totes</a></li>
+          <li><a href="#products" class="category-link" data-category="watches">Watches & Timepieces</a></li>
+          <li><a href="#products" class="category-link" data-category="headphones">Wireless Headphones</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col newsletter-col">
+        <h4 class="footer-heading">Stay in the Loop</h4>
+        <p class="newsletter-sub">
+          Subscribe for early access to product drops, insider discounts, and styling tips.
+        </p>
+        <form class="newsletter-form" id="newsletter-form">
+          <div class="newsletter-input-group">
+            <input type="email" id="newsletter-email" placeholder="Enter your email" required aria-label="Email address for newsletter">
+            <button type="submit" class="newsletter-btn" aria-label="Subscribe to newsletter">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-content">
+        <p>&copy; 2026 ShopEase Inc. All rights reserved. Designed for effortless shopping.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Shipping & Returns</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-out Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cart-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping Cart Drawer">
+    <div class="cart-header">
+      <div class="cart-title-wrapper">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <h3>Your Cart (<span id="cart-drawer-count">0</span>)</h3>
+      </div>
+      <button class="cart-close-btn" id="cart-close-btn" aria-label="Close cart drawer">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- Scrollable Items List -->
+    <div class="cart-body" id="cart-body">
+      <!-- Generated dynamically by JavaScript -->
+    </div>
+
+    <!-- Cart Footer & Summary -->
+    <div class="cart-footer" id="cart-footer">
+      <div class="cart-summary-line">
+        <span>Subtotal</span>
+        <span class="summary-amount" id="cart-subtotal">$0.00</span>
+      </div>
+      <div class="cart-summary-line">
+        <span>Shipping</span>
+        <span class="shipping-tag" id="cart-shipping">FREE</span>
+      </div>
+      <div class="cart-summary-divider"></div>
+      <div class="cart-summary-line total-line">
+        <span>Total</span>
+        <span class="total-amount" id="cart-total">$0.00</span>
+      </div>
+
+      <div class="cart-actions">
+        <button class="btn btn-primary checkout-btn" id="checkout-btn">
+          Proceed to Checkout <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="btn btn-secondary clear-cart-btn" id="clear-cart-btn">
+          Clear Cart
+        </button>
+      </div>
+      <p class="secure-checkout-notice">
+        <i class="fa-solid fa-lock"></i> Demo store: No real payment processed
+      </p>
+    </div>
+  </aside>
+
+  <!-- Demo Checkout Success Modal -->
+  <div class="modal-overlay" id="checkout-modal">
+    <div class="modal-box">
+      <div class="modal-icon-success">
+        <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <h3>Order Placed Successfully!</h3>
+      <p>Thank you for exploring <strong>ShopEase</strong>! Your simulated order of <strong id="modal-order-total">$0.00</strong> has been received with sample tracking reference <strong>#SE-8942</strong>.</p>
+      <div class="modal-actions">
+        <button class="btn btn-primary" id="modal-close-btn">Continue Shopping</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Toast Notifications -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- JavaScript -->
+  <script src="javascript/app.js"></script>
+</body>
+</html>

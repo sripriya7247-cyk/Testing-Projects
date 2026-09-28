@@ -1,0 +1,18 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+div{
+    background-color: bisque;
+}
+p:hover{
+    transform: translate(underline);
+}
+h1{
+    margin-left: 900px;
+    margin-top: 10px;
+}
+img{
+    float: left;
+}
